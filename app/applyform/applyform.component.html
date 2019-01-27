@@ -1,0 +1,33 @@
+
+<div class="apply">
+  <div class="loadWrapper" *ngIf="loaded">  
+  <div class="loader"></div>  
+</div>
+  <form class="apply-form" [formGroup]="rForm"  #form="ngForm" (ngSubmit)="submitForm(form.value)" ngNativeValidate >
+    <div class="apply_header"><span class="apply_h1">Application Form</span></div>
+                      <input type="hidden" name="_next" value="/success" />
+                      
+                        <div *ngIf="!success">
+                                <label class="apply_label" for="name">Name</label><small class="apply_error" *ngIf="formErrors.name">{{formErrors.name}}<br /></small>
+                                <input type="text" formControlName="name" class="apply_input" name="name" />
+                                <label class="apply_label" for="email">Email</label><small class="apply_error" *ngIf="formErrors.email">{{formErrors.email}}<br /></small>
+                                <input type="text" formControlName="email" class="apply_input" name="email"  />
+                                <label class="apply_label" for="phone">Phone</label><small class="apply_error" *ngIf="formErrors.phone">{{formErrors.phone}}<br /></small>
+                                <input type="text" formControlName="phone" class="apply_input_phone" name="phone" />
+                                <label class="apply_label" for="city">City</label><small class="apply_error" *ngIf="formErrors.city">{{formErrors.city}}<br /></small>
+                                <input type="text" formControlName="city" class="apply_input" name="city"  />
+                                <label class="apply_label" for="state">State</label><small class="apply_error" *ngIf="formErrors.state">{{formErrors.state}}<br /></small>
+                                <input type="text" formControlName="state" class="apply_input_state" name="state"/>
+                                
+
+                        
+
+                      
+                      <input class="form_submit" type="submit" value="Submit" />
+                      </div>
+                    <div *ngIf="success">
+                        <span class="apply_success">Your Application is on the way!!!</span>
+                        
+                      </div>
+                    </form>
+</div>
