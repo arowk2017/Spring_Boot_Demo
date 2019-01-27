@@ -1,0 +1,150 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+.apply{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.apply-form{
+  max-width: 510px;
+  min-width: 324px;
+  width: 100%;
+  border: 1px solid #5555;
+  padding: 25px;
+  margin: 25px;
+  background-color: #fff;
+}
+
+.form_submit{
+    display: block;
+}
+
+.apply_input{
+    margin: 0 0 0.5em 0;
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    color: #555;
+    font-size: 2em;
+    width: 400px;
+}
+
+
+.apply_input_state{
+    margin: 0 0 0.5em 0;
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    color: #555;
+    font-size: 2em;
+    width: 80px;
+}
+
+.apply_input_phone{
+    margin: 0 0 0.5em 0;
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    color: #555;
+    font-size: 2em;
+    width: 250px;
+}
+
+.apply_label{
+    display: block;
+    margin: 0 0 0.5em 0;
+    color: #4f6fad;
+    font-size: 1.2em;
+    font-family: 'Lato', sans-serif;
+}
+
+.apply_header{
+    padding: 1.5em 2.5em;
+    border-bottom: 1px solid #ccc;
+    background: url('../../assets/Fotoram.io.jpg')  center top 730px;
+    color: #fff;
+    margin: -25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.apply_h1{
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 2.8125em;
+}
+
+.form_submit{
+        position: relative;
+    height: 60px;
+    width: 200px;
+    background: #007ac9;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 26px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form_submit:hover{
+        position: relative;
+    height: 60px;
+    width: 200px;
+    background: #fff;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 26px;
+    color: #007ac9;
+    cursor: pointer;
+}
+
+.apply_error{
+    color: red;
+    
+}
+
+.apply_success{
+    text-align:center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 2.8125em;
+}
+
+
+
+//////////
+.loadWrapper {  
+    background: rgba(0,0,0,0.3);  
+    width: 100%;  
+    height: 100%;  
+    position: fixed;  
+    top:0px;  
+    left:0px;  
+    z-index: 99999;  
+}  
+.loader {
+   
+    border: 5px solid #555; 
+    border-top: 5px solid #007ac9; 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+//////////
+
+input.ng-invalid.ng-touched  {
+  border: 2px solid red;
+}
+
+input.ng-valid.ng-touched {
+  border: 1px solid #ccc;
+}
